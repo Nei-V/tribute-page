@@ -1,0 +1,23 @@
+body {
+    background-color:#ffffff;
+}
+
+footer {
+    
+    /*background-color: blueviolet;*/
+    /*border-radius: 5px;*/
+    border-top: 1px solid rgb(45, 45, 68);
+   max-height:max-content;
+  margin-top:1em;
+  }
+
+footer p {
+  font-size:1em;
+  }
+
+footer a img {
+  height:2.5em;
+    margin-bottom:-0.2em;
+}
+
+
