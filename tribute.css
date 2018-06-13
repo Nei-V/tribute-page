@@ -3,8 +3,7 @@ body {
   align-content: center;
   max-width: 1000px;
   margin: auto;
-  min-width:510px;
-  
+  min-width: 510px;
 }
 
 main {
@@ -18,19 +17,19 @@ main {
 
 header {
   grid-area: header;
+  color: #44617c;
 }
 
 #intro {
   grid-area: quote;
   display: flex;
   flex-flow: row;
-  
 }
 
 #intro p {
   text-align: justify;
   margin: 10px;
-  padding:5px;
+  padding: 5px;
   background-color: #f1f1f1;
   width: 50%;
 }
@@ -41,12 +40,12 @@ header {
 
 #tribute-link img {
   width: 96%;
-  min-width:435px;
+  min-width: 435px;
 }
 
 #img-div {
   grid-area: image;
-  margin:0px;
+  margin: 0px;
 }
 
 #image {
@@ -57,31 +56,37 @@ header {
   height: auto;
 }
 
+#img-caption {
+  background-color: #f1f1f1;
+  color: #44617c;
+}
+
 #tribute-info {
   grid-area: info;
   text-align: left;
   margin-left: 10px;
   margin-top: 5px;
-  line-height: 1.3em;
+  line-height: 2vw;
 }
 
-@media (max-width:700px){
-  main{
-  grid-template-areas: "header header" "quote quote" "banner banner" "image image" "info info";
+@media (max-width:700px) {
+  main {
+    grid-template-areas: "header header" "quote quote" "banner banner" "image image" "info info";
+  }
+  #tribute-info {
+    line-height: 2em;
   }
 }
-footer {
-  text-align: center;
-  border-top: 1px solid rgb(45, 45, 68);
-  max-height: max-content;
-  margin-top: 1em;
-}
-
-footer p {
-  font-size: 1em;
-}
-
-footer a img {
-  height: 2.5em;
-  margin-bottom: -0.2em;
-}
+  footer {
+    text-align: center;
+    border-top: 1px solid rgb(45, 45, 68);
+    max-height: max-content;
+    margin-top: 1em;
+  }
+  footer p {
+    font-size: 1em;
+  }
+  footer a img {
+    height: 2.5em;
+    margin-bottom: -0.2em;
+  }
